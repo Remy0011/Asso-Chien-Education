@@ -151,3 +151,25 @@
   margin-top: var(--sp-4);
   margin-bottom: 0;
 }
+
+/* Bloc d'appel à l'action centré (ex. carte adhésion sur l'accueil) */
+.cta-card {
+  text-align: center;
+}
+
+.cta-card p {
+  margin-inline: auto;
+}
+
+/* Bloc contact non cliquable (site web, adresse) */
+.contact-action--static {
+  cursor: default;
+}
+
+/* Liste de liens du pied de page, sans puces */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-2);
+}
