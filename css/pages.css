@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Pages — styles spécifiques à l'accueil et au contact
+   ========================================================================== */
+
+/* --- Hero (accueil) --- */
+.hero {
+  padding-block: var(--sp-9) var(--sp-8);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__grid {
+  display: grid;
+  gap: var(--sp-7);
+  align-items: center;
+}
+
+@media (min-width: 860px) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.hero__title {
+  font-size: clamp(var(--fs-700), 5vw, var(--fs-800));
+}
+
+.hero__lede {
+  font-size: var(--fs-400);
+  color: var(--color-forest-dark);
+  max-width: 52ch;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+.hero__figure {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, var(--color-moss), var(--color-forest));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-paper);
+  font-family: var(--font-display);
+  text-align: center;
+  padding: var(--sp-5);
+}
+
+/* Chiffres clés */
+.stats {
+  display: grid;
+  gap: var(--sp-5);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+  .stats { grid-template-columns: repeat(4, 1fr); }
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat__number {
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  color: var(--color-amber-dark);
+  display: block;
+}
+
+.stat__label {
+  font-size: var(--fs-100);
+  color: var(--color-forest-dark);
+}
+
+/* Valeurs / actions (accueil) */
+.value-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.value-card__icon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-amber-dark);
+}
+
+/* --- Page contact --- */
+.contact-grid {
+  display: grid;
+  gap: var(--sp-5);
+}
+
+@media (min-width: 720px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.membership-card {
+  background: linear-gradient(160deg, var(--color-forest), var(--color-forest-dark));
+  color: var(--color-paper);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-7);
+  display: grid;
+  gap: var(--sp-3);
+}
+
+.membership-card__amount {
+  font-family: var(--font-display);
+  font-size: var(--fs-700);
+}
+
+.membership-card__period {
+  font-size: var(--fs-300);
+  opacity: 0.85;
+}
+
+address {
+  font-style: normal;
+}

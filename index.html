@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil — Association [Nom de l'association]</title>
+  <meta name="description" content="Association de protection animale : découvrez nos missions, nos actions et comment nous soutenir.">
+
+  <!-- Favicon (SVG à remplacer par le logo définitif — voir /assets/icons/README.txt) -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.svg">
+
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feuilles de style, dans leur ordre de cascade -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/icons/logo-mark.svg" alt="" width="40" height="40">
+        <span>[Nom de l'association]</span>
+      </a>
+
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="main-nav">
+        Menu
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="main-nav__list">
+          <li><a class="main-nav__link" href="index.html" aria-current="page">Accueil</a></li>
+          <li><a class="main-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu-principal">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="eyebrow">Association loi 1901 — bénévole</p>
+          <h1 class="hero__title">Chaque animal mérite un foyer et de la tendresse.</h1>
+          <p class="hero__lede">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua, au service des
+            animaux abandonnés et maltraités de notre territoire.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="contact.html">Adhérer à l'association</a>
+            <a class="btn btn--ghost" href="contact.html">Nous contacter</a>
+          </div>
+        </div>
+        <div class="hero__figure" aria-hidden="true">
+          <p>[ Emplacement photo / illustration de l'association ]</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trail-divider" aria-hidden="true"></div>
+
+    <!-- Chiffres clés -->
+    <section class="section">
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__number">128</span>
+            <span class="stat__label">animaux recueillis en 2025</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">94</span>
+            <span class="stat__label">adoptions réalisées</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">37</span>
+            <span class="stat__label">bénévoles actifs</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">12</span>
+            <span class="stat__label">années d'engagement</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Présentation -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Notre mission</p>
+          <h2>Qui sommes-nous ?</h2>
+        </div>
+        <div class="grid grid--2">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur.
+          </p>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Notre association vit
+            uniquement grâce à l'engagement de ses bénévoles et aux
+            adhésions de ses membres — chaque cotisation compte.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos actions / valeurs -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Nos actions</p>
+          <h2>Ce que nous faisons au quotidien</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="card value-card">
+            <svg class="value-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.5C12 6.2 13.5 5 15.5 5 19 5 21.5 8.5 19.5 12.5 17 16.65 12 21 12 21z"/>
+            </svg>
+            <h3>Recueil et soins</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.</p>
+          </article>
+          <article class="card value-card">
+            <svg class="value-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M4 12h16M4 12l4-4M4 12l4 4"/>
+              <path d="M20 12l-4-4M20 12l-4 4"/>
+            </svg>
+            <h3>Adoption responsable</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo.</p>
+          </article>
+          <article class="card value-card">
+            <svg class="value-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>
+            </svg>
+            <h3>Sensibilisation</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appel à l'action adhésion -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="card" style="text-align:center;">
+          <h2>Envie de nous soutenir ?</h2>
+          <p style="margin-inline:auto;">
+            L'association ne vit que grâce aux adhésions de ses membres.
+            Retrouvez le montant de la cotisation annuelle et tous nos
+            moyens de contact sur la page dédiée.
+          </p>
+          <a class="btn btn--primary" href="contact.html">Voir les modalités d'adhésion</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <h2>[Nom de l'association]</h2>
+        <p>Association loi 1901 dédiée à la protection et au bien-être animal.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <ul style="list-style:none; padding:0; display:grid; gap:0.5rem;">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact rapide</h2>
+        <p><a href="contact.html">Voir la page contact</a></p>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; <span id="year">2026</span> [Nom de l'association]. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

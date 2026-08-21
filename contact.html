@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Association [Nom de l'association]</title>
+  <meta name="description" content="Contactez l'association : montant de l'adhésion annuelle, téléphone, e-mail et adresse.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/icons/logo-mark.svg" alt="" width="40" height="40">
+        <span>[Nom de l'association]</span>
+      </a>
+
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="main-nav">
+        Menu
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="main-nav__list">
+          <li><a class="main-nav__link" href="index.html">Accueil</a></li>
+          <li><a class="main-nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu-principal">
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Contact &amp; adhésion</p>
+          <h1>Rejoignez-nous ou écrivez-nous</h1>
+          <p class="hero__lede">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Toute
+            l'équipe est bénévole : nous vous répondons dès que possible.
+          </p>
+        </div>
+
+        <!-- Montant de l'adhésion -->
+        <div class="membership-card">
+          <p class="eyebrow" style="color:#f2ecdd; opacity:0.85;">Adhésion annuelle</p>
+          <p class="membership-card__amount">25&nbsp;€</p>
+          <p class="membership-card__period">par an et par membre, renouvelable chaque 1ᵉʳ janvier.</p>
+          <p style="max-width:60ch; opacity:0.9;">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            L'adhésion donne accès aux assemblées générales et à la newsletter
+            de l'association.
+          </p>
+          <div>
+            <a class="btn btn--outline" href="contact.html#coordonnees">Comment nous contacter pour adhérer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trail-divider" aria-hidden="true"></div>
+
+    <!-- Coordonnées -->
+    <section class="section section--alt" id="coordonnees">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Nos coordonnées</p>
+          <h2>Téléphone, e-mail et adresse</h2>
+          <p>
+            Par mesure de précaution, un clic sur le téléphone ou l'e-mail
+            vous demandera toujours une confirmation avant d'ouvrir votre
+            application d'appel ou votre messagerie.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Téléphone : interaction obligatoire via modale -->
+          <button type="button" class="contact-action" data-contact-phone="+33612345678">
+            <svg class="contact-action__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>
+              <p class="contact-action__label">Téléphone</p>
+              <p class="contact-action__value">06 12 34 56 78</p>
+            </span>
+          </button>
+
+          <!-- E-mail : interaction obligatoire via modale -->
+          <button type="button" class="contact-action" data-contact-email="contact@nom-association.fr">
+            <svg class="contact-action__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 6-10 7L2 6"/>
+            </svg>
+            <span>
+              <p class="contact-action__label">E-mail</p>
+              <p class="contact-action__value">contact@nom-association.fr</p>
+            </span>
+          </button>
+
+          <!-- Site web -->
+          <div class="contact-action" style="cursor:default;">
+            <svg class="contact-action__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span>
+              <p class="contact-action__label">Site internet</p>
+              <p class="contact-action__value">www.nom-association.fr</p>
+            </span>
+          </div>
+
+          <!-- Adresse -->
+          <div class="contact-action" style="cursor:default;">
+            <svg class="contact-action__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>
+              <p class="contact-action__label">Adresse</p>
+              <address class="contact-action__value">
+                12 rue des Lilas<br>57000 Metz, France
+              </address>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <h2>[Nom de l'association]</h2>
+        <p>Association loi 1901 dédiée à la protection et au bien-être animal.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <ul style="list-style:none; padding:0; display:grid; gap:0.5rem;">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact rapide</h2>
+        <p><a href="contact.html#coordonnees">Voir nos coordonnées</a></p>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; <span id="year">2026</span> [Nom de l'association]. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/contact.js"></script>
+</body>
+</html>

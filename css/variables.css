@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Design tokens — Association animale
+   Modifier uniquement ce fichier pour changer l'identité visuelle du site.
+   ========================================================================== */
+
+:root {
+  /* Couleurs — palette "refuge" */
+  --color-ink: #22301f;          /* texte principal, quasi noir vert */
+  --color-forest: #35513c;       /* couleur primaire (nav, boutons) */
+  --color-forest-dark: #253a2b;  /* survol / états actifs */
+  --color-moss: #7c9473;         /* accent secondaire, sauge */
+  --color-amber: #c98a2c;        /* accent d'appel à l'action */
+  --color-amber-dark: #a86f1f;   /* survol du bouton amber */
+  --color-paper: #f2ecdd;        /* fond général, papier chaud */
+  --color-card: #fffbf2;         /* fond des cartes, plus clair que le papier */
+  --color-line: #d9cfb8;         /* séparateurs, bordures discrètes */
+  --color-danger: #a33d2c;
+
+  /* Typographie */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --fs-100: 0.8rem;
+  --fs-200: 0.9rem;
+  --fs-300: 1rem;
+  --fs-400: 1.15rem;
+  --fs-500: 1.5rem;
+  --fs-600: 2rem;
+  --fs-700: 2.75rem;
+  --fs-800: 3.5rem;
+
+  /* Espacements (échelle 4px) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4.5rem;
+  --sp-9: 6rem;
+
+  /* Rayons / ombres */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 28px;
+  --shadow-card: 0 12px 30px -18px rgba(34, 48, 31, 0.45);
+  --shadow-modal: 0 25px 60px -20px rgba(20, 28, 17, 0.55);
+
+  /* Largeur de contenu */
+  --content-width: 1120px;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast: 150ms;
+  --t-med: 280ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Le site reste volontairement clair (univers "papier chaud"),
+     mais on garde ce bloc pour une future déclinaison sombre. */
+}

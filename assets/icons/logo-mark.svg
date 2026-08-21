@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo de l'association">
+  <circle cx="32" cy="32" r="32" fill="#35513c"/>
+  <g fill="#f2ecdd">
+    <ellipse cx="32" cy="38" rx="12" ry="10"/>
+    <ellipse cx="17" cy="24" rx="6" ry="7"/>
+    <ellipse cx="47" cy="24" rx="6" ry="7"/>
+    <ellipse cx="24" cy="14" rx="5" ry="6"/>
+    <ellipse cx="40" cy="14" rx="5" ry="6"/>
+  </g>
+</svg>
