@@ -7,8 +7,9 @@
   <meta name="description" content="Association d'éducation canine : nous aidons les maîtres à mieux comprendre et éduquer leur chien, au quotidien.">
 
   <!-- Favicon (SVG à remplacer par le logo définitif — voir /assets/icons/README.txt) -->
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="alternate icon" href="assets/favicon.svg">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <!-- Polices -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html">
-        <img class="brand__mark" src="assets/icons/logo-mark.svg" alt="" width="40" height="40">
+        <img class="brand__mark" src="assets/icons/logo-mark.png" alt="" width="40" height="40">
         <span>L'École canine pour tous</span>
       </a>
 
@@ -64,9 +65,17 @@
             <a class="btn btn--ghost" href="contact.html">Nous contacter</a>
           </div>
         </div>
-        <div class="hero__figure" aria-hidden="true">
-          <p>[ Emplacement photo d'un cours d'éducation canine ]</p>
-        </div>
+        <figure class="hero__figure">
+          <img
+            class="hero__image"
+            src="img/equipe-1000.jpg"
+            srcset="img/equipe-640.jpg 640w, img/equipe-1000.jpg 1000w, img/equipe-1600.jpg 1600w"
+            sizes="(min-width: 860px) 45vw, 100vw"
+            width="1000" height="750"
+            alt="Les bénévoles de L'École canine pour tous, réunis en t-shirts aux couleurs de l'association."
+            decoding="async">
+          <figcaption class="hero__caption">L'équipe de bénévoles de l'association.</figcaption>
+        </figure>
       </div>
     </section>
 

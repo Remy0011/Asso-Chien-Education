@@ -1,0 +1,36 @@
+Icônes et images du site — L'École canine pour tous
+
+Toutes les icônes ci-dessous sont générées à partir du logo officiel
+(img/logo.jpg), en isolant la patte et en rendant le fond blanc
+transparent.
+
+assets/
+  favicon.ico          16/32/48 px — favicon principal (tous navigateurs)
+  favicon-32.png       32 px — favicon PNG moderne
+  apple-touch-icon.png 180 px — icône d'ajout à l'écran d'accueil iOS
+  icon-192.png         192 px — icône Android / manifest PWA
+  icon-512.png         512 px — icône haute définition / manifest PWA
+
+assets/icons/
+  logo-mark.png        120 px — logo affiché dans l'en-tête (40 px à l'écran,
+                       120 px pour rester net sur écrans haute densité)
+
+img/
+  logo.jpg             logo officiel complet (patte + nom + téléphone).
+                       Non utilisé sur le site pour l'instant : il peut
+                       servir pour les réseaux sociaux, affiches, ou être
+                       ajouté dans le pied de page si souhaité.
+  equipe-source.jpg    photo d'équipe originale (2048x1536), conservée
+                       comme source haute définition.
+  equipe-1600.jpg      \
+  equipe-1000.jpg       > versions optimisées pour le web, servies
+  equipe-640.jpg       /  automatiquement via srcset selon la taille d'écran.
+
+IMPORTANT — noms de fichiers
+Ne pas utiliser d'accents ni d'espaces dans les noms de fichiers images
+(l'ancien "équipe.jpg" a été renommé "equipe-source.jpg"). Les accents
+provoquent des erreurs 404 imprévisibles selon l'hébergeur et le
+navigateur, car ils doivent être encodés dans les URL.
+
+Si vous remplacez le logo un jour, regénérez toutes les icônes ci-dessus
+à partir du nouveau fichier pour rester cohérent.
