@@ -74,6 +74,11 @@ button {
   border-radius: var(--radius-sm);
 }
 
+/* Décale la cible d'une ancre pour qu'elle ne passe pas sous l'en-tête sticky */
+:target {
+  scroll-margin-top: 6rem;
+}
+
 /* Lien d'évitement pour les lecteurs d'écran / clavier */
 .skip-link {
   position: absolute;
